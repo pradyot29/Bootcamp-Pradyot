@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 Notes</title>
+</head>
+<body>
+    <h1>Thought Process for the Exercise 2</h1>
+    <h2>Level 1: Define CSS Variables and Apply Basic Styling</h2>
+    <p>To begin, I thought about how CSS variables could make the design more consistent and reusable. I defined variables for primary and secondary colors, font sizes for headers and body, and spacing for margins. These were included in a separate <code>variables.css</code> file linked to the main CSS.</p>
+    <p>To understand the implementation better, I asked AI: "How do I define CSS variables and use them in a project?" The response helped me use the <code>:root</code> selector for defining variables and <code>var()</code> to reference them, making the setup seamless.</p>
+    <h2>Level 2: Using Default Values and Styling Alternate Rows</h2>
+    <p>Next, I worked on ensuring fallback styles with default values for CSS variables, such as <code>var(--primary-color, black)</code>. This helped avoid unexpected issues when variables were undefined.</p>
+    <p>For table styling, I used the <code>nth-child</code> selector to create alternating row colors. AI clarified this approach when I asked: "How do I style every alternate row in a table?" It worked perfectly to improve table readability.</p>
+    <h2>Level 3: Dynamic Theme Switching with Variables</h2>
+    <p>Dynamic theming was an exciting challenge. I wanted to toggle between light and dark themes using CSS variables. AI suggested toggling class names on the <code>&lt;html&gt;</code> or <code>&lt;body&gt;</code> tags to redefine variables for each theme.</p>
+    <p>By following this, I implemented a simple JavaScript function to handle the theme switch. This made the page visually adaptable to user preferences with minimal CSS adjustments.</p>
+    <h2>Reflection</h2>
+    <p>This exercise deepened my understanding of CSS variables and their potential for creating consistent, flexible, and theme-able designs. AI was instrumental in breaking down concepts like default values, advanced selectors, and theme switching into manageable steps, enabling me to approach each level effectively.</p>
+</body>
+</html>
+
+//sorry for not sharing the chat link as i randomly asked AI in multiple tabs with previous work chats running. From exercise 3 this is not the case

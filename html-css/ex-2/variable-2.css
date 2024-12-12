@@ -1,0 +1,7 @@
+:root {
+    --primary-color: #8e44ad;
+    --secondary-color: var(--primary-color, #f39c12); /* Default fallback */
+    --header-font-size: 26px;
+    --body-font-size: 18px;
+    --margin-spacing: 15px;
+}
