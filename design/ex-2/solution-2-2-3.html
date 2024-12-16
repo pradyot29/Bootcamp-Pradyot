@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shades of Blue Swatch Grid</title>
+  <link rel="stylesheet" href="solution-2-2-3.css">
+</head>
+<body>
+  <h1>Color Swatch</h1>
+
+  <div class="controls">
+    <label for="saturation">Saturation: <span id="saturation-value">50%</span></label>
+    <input type="range" id="saturation" min="0" max="100" value="50">
+
+    <label for="lightness">Lightness: <span id="lightness-value">50%</span></label>
+    <input type="range" id="lightness" min="0" max="100" value="50">
+  </div>
+
+  <div class="swatch-container">
+    <!-- Color Swatches in a 3x3 Grid, all shades of blue -->
+    <div class="swatch">
+      <div class="color-box" id="color-box1"></div>
+      <p id="color1">hsl(210, 100%, 50%)</p>
+      <button class="copy-btn" onclick="copyColor(1)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box2"></div>
+      <p id="color2">hsl(210, 100%, 60%)</p>
+      <button class="copy-btn" onclick="copyColor(2)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box3"></div>
+      <p id="color3">hsl(210, 100%, 70%)</p>
+      <button class="copy-btn" onclick="copyColor(3)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box4"></div>
+      <p id="color4">hsl(210, 80%, 50%)</p>
+      <button class="copy-btn" onclick="copyColor(4)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box5"></div>
+      <p id="color5">hsl(210, 60%, 50%)</p>
+      <button class="copy-btn" onclick="copyColor(5)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box6"></div>
+      <p id="color6">hsl(210, 40%, 50%)</p>
+      <button class="copy-btn" onclick="copyColor(6)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box7"></div>
+      <p id="color7">hsl(210, 100%, 40%)</p>
+      <button class="copy-btn" onclick="copyColor(7)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box8"></div>
+      <p id="color8">hsl(210, 100%, 30%)</p>
+      <button class="copy-btn" onclick="copyColor(8)">Copy</button>
+    </div>
+    <div class="swatch">
+      <div class="color-box" id="color-box9"></div>
+      <p id="color9">hsl(210, 100%, 20%)</p>
+      <button class="copy-btn" onclick="copyColor(9)">Copy</button>
+    </div>
+  </div>
+
+  <script>
+    const saturationInput = document.getElementById('saturation');
+    const lightnessInput = document.getElementById('lightness');
+    const saturationValue = document.getElementById('saturation-value');
+    const lightnessValue = document.getElementById('lightness-value');
+
+    // Update color swatch with adjusted saturation and lightness
+    function updateColors() {
+      const saturation = saturationInput.value;
+      const lightness = lightnessInput.value;
+
+      // Use HSL values to create shades of blue with varying lightness
+      for (let i = 1; i <= 9; i++) {
+        const adjustedLightness = 50 + (i - 5) * 10; // Adjust lightness for variety from 20% to 80%
+        const color = `hsl(210, ${saturation}%, ${adjustedLightness}%)`;
+
+        // Update the swatch background color and text
+        document.getElementById(`color-box${i}`).style.backgroundColor = color;
+        document.getElementById(`color${i}`).innerText = color;
+      }
+
+      saturationValue.innerText = `${saturation}%`;
+      lightnessValue.innerText = `${lightness}%`;
+    }
+
+    // Copy color value to clipboard
+    function copyColor(index) {
+      const colorText = document.getElementById(`color${index}`).innerText;
+      navigator.clipboard.writeText(colorText).then(() => {
+        alert('Color copied to clipboard!');
+      });
+    }
+
+    // Event listeners
+    saturationInput.addEventListener('input', updateColors);
+    lightnessInput.addEventListener('input', updateColors);
+
+    // Initial color update when page loads
+    updateColors();
+  </script>
+</body>
+</html>

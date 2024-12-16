@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Color Scheme Card</title>
+    <style>
+        /* Base colors: Blue, Orange, Green */
+        :root {
+            --base-color: #3498db; /* Blue */
+            --complementary-color: #e67e22; /* Orange */
+            --accent-color: #2ecc71; /* Green */
+            --light-shade: #f39c12;
+            --dark-shade: #d35400;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ecf0f1;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--base-color);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 24px;
+        }
+
+        p {
+            color: var(--complementary-color);
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Three-Color Scheme Card</h2>
+        <p>This card uses a three-color scheme, incorporating blue, orange, and green as the accent color.</p>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>

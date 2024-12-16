@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochromatic Theme Card</title>
+    <style>
+        /* Base color: Blue */
+        :root {
+            --base-color: #3498db; /* Blue */
+            --light-shade: rgba(52, 152, 219, 0.4);
+            --dark-shade: rgba(52, 152, 219, 0.7);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: var(--light-shade);
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px var(--dark-shade);
+            border: 2px solid var(--base-color);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 10px var(--dark-shade);
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--base-color);
+            font-size: 24px;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Monochromatic Card</h2>
+        <p>This card uses a monochromatic blue theme with varying shades of the base color.</p>
+    </div>
+</body>
+</html>

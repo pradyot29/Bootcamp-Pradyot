@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive and Lazy Loading Images</title>
+  <link rel="stylesheet" href="solution-2-3.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive and Optimized Images</h1>
+  </header>
+
+  <main>
+    <section class="responsive-images">
+      <h2>Responsive Image with <picture></h2>
+      <picture>
+        <!-- Low-resolution image for smaller screens -->
+        <source srcset="https://via.placeholder.com/600x400" media="(max-width: 768px)">
+        <!-- High-resolution image for larger screens -->
+        <source srcset="https://via.placeholder.com/1200x800" media="(min-width: 769px)">
+        <!-- Fallback image -->
+        <img src="https://via.placeholder.com/800x600" alt="Responsive Example" loading="lazy">
+      </picture>
+    </section>
+
+    <section class="lazy-loading">
+      <h2>Lazy Loaded Image</h2>
+      <!-- Lazy loaded image -->
+      <img
+        src="https://via.placeholder.com/10x10" 
+        data-src="https://via.placeholder.com/800x600" 
+        alt="Lazy Loaded Example"
+        class="lazy"
+      >
+    </section>
+  </main>
+
+  <script src="solution-2-3.js"></script>
+</body>
+</html>

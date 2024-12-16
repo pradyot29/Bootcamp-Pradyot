@@ -1,0 +1,54 @@
+/* Basic styling for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+#css-zen-garden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* FontAwesome icon styling */
+.icons i {
+    font-size: 2em;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    color: #ff6347; /* Hover color change */
+}
+
+/* Inline SVG icon styling */
+.icon {
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    stroke: #ff6347; /* Hover stroke color change */
+}

@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin: 20px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Image Styling */
+  img, picture {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .lazy {
+    filter: blur(10px);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .lazy.loaded {
+    filter: blur(0);
+  }
+  

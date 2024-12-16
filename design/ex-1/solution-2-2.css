@@ -1,0 +1,51 @@
+/* Applying Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+}
+
+/* Variable Fonts Example */
+.variable-fonts p {
+    transition: font-weight 0.3s ease;
+}
+
+/* Styling for Drop Cap */
+.drop-cap {
+    font-size: 1.5em;
+}
+
+.drop-cap-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Styling for Text Shadow */
+.text-shadow {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Through Text */
+.image-text-heading {
+    font-size: 6em;
+    background-image: url('https://via.placeholder.com/600x400');
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+}
+
+.image-through-text {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
