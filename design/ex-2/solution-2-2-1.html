@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Themes</title>
-  <link rel="stylesheet" href="solution-2-2-1light.css" id="theme-style">
+  <title>Dark and Light Themes</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="solution-2-2-1light.css">
 </head>
 <body>
-  <div class="content">
-    <h1>Welcome to the Themed Page</h1>
-    <p>This page switches between dark and light themes using CSS variables.</p>
-    <button onclick="toggleTheme()">Switch Theme</button>
-  </div>
+  <header>
+    <h1>Theme Toggle Demo</h1>
+    <button id="theme-toggle">Switch to Dark Theme</button>
+  </header>
   
+  <main>
+    <section class="content">
+      <h2>Welcome to the Color Theme Demo</h2>
+      <p>Experience dark and light themes with proper contrast and styling.</p>
+    </section>
+
+    <section class="image-overlay">
+      <img src="https://picsum.photos/800/400" alt="Placeholder" />
+      <div class="overlay-text">Beautiful Placeholder Image</div>
+    </section>
+  </main>
+
   <script>
-    function toggleTheme() {
-      const currentTheme = document.getElementById('theme-style').getAttribute('href');
-      if (currentTheme === 'solution-2-2-light.css') {
-        document.getElementById('theme-style').setAttribute('href', 'solution-2-2-1dark.css');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+    themeToggle.addEventListener('click', () => {
+      if (themeStylesheet.getAttribute('href') === 'solution-2-2-1light.css') {
+        themeStylesheet.setAttribute('href', 'solution-2-2-1dark.css');
+        themeToggle.textContent = 'Switch to Light Theme';
       } else {
-        document.getElementById('theme-style').setAttribute('href', 'solution-2-2-1light.css');
+        themeStylesheet.setAttribute('href', 'solution-2-2-1light.css');
+        themeToggle.textContent = 'solution-2-2-1dark.css';
       }
-    }
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 3rem;
+            color: #444;
+            text-align: center;
+        }
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .section-card {
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+        .section-card h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #007BFF;
+        }
+        .section-card p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .section-card a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #ffffff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .section-card a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            background: #f4f4f4;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer span {
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Overview</h1>
+    <div class="section-container">
+        <!-- Design Section -->
+        <div class="section-card">
+            <h2>Design</h2>
+            <p>Explore solutions and exercises related to design concepts.</p>
+            <a href="./design/index.html">Go to Design</a>
+        </div>
+        <!-- HTML-CSS Section -->
+        <div class="section-card">
+            <h2>HTML-CSS</h2>
+            <p>Explore solutions and exercises related to HTML and CSS.</p>
+            <a href="./html-css/index.html">Go to HTML-CSS</a>
+        </div>
+    </div>
+    <footer>
+        Made with 💙 by <span>Pradyot</span>
+    </footer>
+</body>
+</html>

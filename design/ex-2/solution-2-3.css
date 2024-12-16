@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Gradient Theme */
+  .gradient-header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+  }
+  
+  .gradient-box {
+    width: 300px;
+    height: 150px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #89cff0, #fdfd96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .gradient-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, #89cff0, #ff758c);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Color Palette */
+  .color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .color-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .base {
+    background-color: #ff758c; /* Base color */
+  }
+  
+  .tint {
+    background-color: #ffc4d0; /* Lighten the base color */
+  }
+  
+  .shade {
+    background-color: #a83c5a; /* Darken the base color */
+  }
+  
+  /* Apply Palette Dynamically for Breakpoints */
+  @media (max-width: 768px) {
+    .color-box {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .base {
+      background-color: #ffa07a;
+    }
+  
+    .tint {
+      background-color: #ffd7c9;
+    }
+  
+    .shade {
+      background-color: #7a2a44;
+    }
+  }
+  
+  /* Contrast Demonstration */
+  .contrast-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .contrast-box {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .light {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #89cff0;
+  }
+  
+  .dark {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ff758c;
+  }
+  
