@@ -1,0 +1,10 @@
+2024-12-17T19:18:54.457Z [INFO]: Program started
+2024-12-17T19:19:09.188Z [INFO]: Operation: divide, Result: 5
+2024-12-17T19:19:17.639Z [WARN]: Invalid operation entered
+2024-12-17T19:19:27.658Z [INFO]: Program started
+2024-12-17T19:19:34.842Z [INFO]: Operation: add, Result: 136
+2024-12-17T19:19:48.008Z [INFO]: Operation: divide, Result: 14
+2024-12-17T19:20:18.252Z [INFO]: Operation: add, Result: 9
+2024-12-17T19:20:22.287Z [INFO]: Operation: divide, Result: 0.8
+2024-12-17T19:20:33.785Z [ERROR]: Error: Division by zero is not allowed
+2024-12-17T19:20:39.662Z [WARN]: Invalid operation entered

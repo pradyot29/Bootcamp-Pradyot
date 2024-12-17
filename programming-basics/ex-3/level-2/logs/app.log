@@ -1,0 +1,9 @@
+2024-12-18 00:23:08 [INFO]: Program started
+2024-12-18 00:23:08 [INFO]: Addition operation started
+2024-12-18 00:23:08 [INFO]: Operation successful: Sum = 8
+2024-12-18 00:23:08 [INFO]: Division operation started
+2024-12-18 00:23:08 [INFO]: Operation successful: Result = 5
+2024-12-18 00:23:08 [INFO]: Division operation started
+2024-12-18 00:23:08 [ERROR]: Fatal error: Division by zero!
+2024-12-18 00:23:08 [WARN]: Program encountered an error, but continued execution
+2024-12-18 00:23:08 [INFO]: Program completed

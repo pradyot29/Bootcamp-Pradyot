@@ -1,0 +1,9 @@
+app:
+  name: "My Application"
+  version: "1.0.0"
+  environment: "development"
+  port: 3000
+  logLevel: "debug"  # Log level for development environment
+  functions:
+    - "sin"
+    - "cos"

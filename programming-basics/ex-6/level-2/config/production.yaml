@@ -1,0 +1,5 @@
+app:
+  name: "My Application"
+  version: "1.0.0"
+  environment: "production"
+  port: 8080

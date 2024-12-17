@@ -1,0 +1,23 @@
+{
+  "name": "level-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env DEBUG=* node index.js",
+    "start": "node index.js"
+  },
+  "bin": {
+  "mathcli": "./index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
