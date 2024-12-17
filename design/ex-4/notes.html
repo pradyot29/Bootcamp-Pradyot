@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercise 4: Basics of Images</h1>
+
+        <h2>Challenges Faced:</h2>
+        <p>
+            Working with images was <span class="highlight">moderately tricky</span>. I thought it would be simple, but maintaining image proportions and ensuring they looked good across devices required extra effort. 
+        </p>
+        <p>
+            For Level 1, using placeholder services like Lorem Picsum was straightforward, but styling the images with consistent <strong>width, height, and border-radius</strong> took trial and error. I initially faced an issue where images looked stretched due to incorrect aspect ratios.
+        </p>
+        <p>
+            Level 2 brought new challenges. Adding a <strong>full-bleed header image</strong> was exciting, but applying overlays using gradients required careful tweaking to avoid affecting the text readability.
+        </p>
+        <p>
+            Level 3 tested my understanding of responsive design. Implementing the <code>&lt;picture&gt;</code> element to load different image versions for varying screen sizes was a bit confusing at first. Optimizing image loading with <strong>lazy loading</strong> was also something new for me, and I had to read about how it actually works.
+        </p>
+
+        <h2>Tools and Resources Used:</h2>
+        <ul>
+            <li>HTML5 for image structure</li>
+            <li>CSS for image styling (size, border-radius, overlays)</li>
+            <li>Lorem Picsum for placeholder images</li>
+        </ul>
+
+        <h2>My Thought Process:</h2>
+        <p>
+            I started by adding simple images and adjusting their width and height using CSS. The <span class="highlight">border-radius</span> styling gave the images a modern look, which I liked. 
+        </p>
+        <p>
+            For the full-bleed header image in Level 2, I experimented with CSS overlays using gradients. I wanted to keep the focus on the image while making sure the overlaid text was readable. Finding the right balance for opacity and contrast took time.
+        </p>
+        <p>
+            At Level 3, I had to focus on performance and responsiveness. The <code>&lt;picture&gt;</code> element helped me serve optimized images for smaller devices. I also learned how lazy loading works and implemented it to speed up page performance. While it worked, I still feel I need to practice this more.
+        </p>
+
+        <h2>Specific Challenges:</h2>
+        <ul>
+            <li>Maintaining image proportions without distortion.</li>
+            <li>Creating effective overlays without reducing readability.</li>
+            <li>Understanding and implementing the <code>&lt;picture&gt;</code> element.</li>
+            <li>Using lazy loading to optimize performance.</li>
+        </ul>
+
+        <h2>Key Learning Outcomes:</h2>
+        <ul>
+            <li>Basic image styling with CSS (width, height, and border-radius).</li>
+            <li>Adding full-bleed images with gradient overlays for headers.</li>
+            <li>Implementing responsive images using the <code>&lt;picture&gt;</code> element.</li>
+            <li>Lazy loading to improve page load performance.</li>
+        </ul>
+
+        <h2>What Could Be Improved:</h2>
+        <ul>
+            <li>More refined gradient overlays for better visual appeal.</li>
+            <li>Improving the understanding of responsive image techniques.</li>
+            <li>Exploring tools for automated image optimization.</li>
+            <li>Practicing lazy loading with real-world examples.</li>
+        </ul>
+
+        <h2>Reflection:</h2>
+        <p>
+            This exercise showed me that handling images in web design involves more than just adding them to the page. I learned a lot about <span class="highlight">responsiveness</span>, optimization, and performance improvements. 
+        </p>
+        <p>
+            I’m still not completely confident with the <code>&lt;picture&gt;</code> element and lazy loading, but I’m glad I got a chance to experiment with them. In the future, I’d like to explore automated tools for optimizing images to make the process more efficient.
+        </p>
+    </div>
+</body>
+</html>
