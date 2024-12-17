@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railways - Book Tickets, Check PNR, and More</title>
+    <link rel="stylesheet" href="solution-2-3.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="https://swarajya.gumlet.io/swarajya/2022-09/36f25bb0-e823-43d2-8280-f7fb6ca4ec1d/2__4_.png?w=610&q=50&compress=true&format=auto" alt="Indian Railways Logo" width="50" height="50">
+                    <span>Indian Railways</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#book">Book Tickets</a></li>
+                    <li><a href="#pnr">PNR Status</a></li>
+                    <li><a href="#schedule">Train Schedule</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Welcome to Indian Railways</h1>
+                <p>Book tickets, check PNR status, and explore train schedules with ease.</p>
+            </div>
+        </section>
+
+        <section id="book" class="booking">
+            <div class="container">
+                <h2>Book Your Journey</h2>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <input type="text" id="from" name="from" required placeholder="Enter origin station">
+                    </div>
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <input type="text" id="to" name="to" required placeholder="Enter destination station">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date of Journey</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class</label>
+                        <select id="class" name="class" required>
+                            <option value="">Select class</option>
+                            <option value="SL">Sleeper</option>
+                            <option value="3A">AC 3 Tier</option>
+                            <option value="2A">AC 2 Tier</option>
+                            <option value="1A">AC First Class</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search Trains</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="pnr" class="pnr-status">
+            <div class="container">
+                <h2>Check PNR Status</h2>
+                <form class="pnr-form">
+                    <div class="form-group">
+                        <label for="pnr-number">PNR Number</label>
+                        <input type="text" id="pnr-number" name="pnr-number" required placeholder="Enter 10-digit PNR number">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Check Status</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="schedule" class="train-schedule">
+            <div class="container">
+                <h2>Train Schedule</h2>
+                <form class="schedule-form">
+                    <div class="form-group">
+                        <label for="train-number">Train Number or Name</label>
+                        <input type="text" id="train-number" name="train-number" required placeholder="Enter train number or name">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">View Schedule</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Indian Railways</h2>
+                <p>Indian Railways is one of the world's largest rail networks, serving millions of passengers daily. We are committed to providing safe, efficient, and comfortable travel experiences across India.</p>
+                <ul class="features">
+                    <li>Extensive network covering over 67,000 km</li>
+                    <li>More than 13,000 passenger trains operating daily</li>
+                    <li>Connecting over 7,000 stations across India</li>
+                    <li>Eco-friendly transportation for a sustainable future</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#book">Book Tickets</a></li>
+                        <li><a href="#pnr">PNR Status</a></li>
+                        <li><a href="#schedule">Train Schedule</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@indianrailways.gov.in</p>
+                    <p>Phone: 139 (Rail Enquiry)</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Indian Railways. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html
